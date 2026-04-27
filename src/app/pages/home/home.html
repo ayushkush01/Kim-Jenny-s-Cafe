@@ -544,68 +544,70 @@
     </div>
   </section>
 
-  <!-- Dynamic Background Video & Elements -->
-  <div class="absolute inset-0 z-0">
-    <video autoplay muted loop playsinline
-      class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40 scale-110">
-      <source src="https://assets.mixkit.co/videos/preview/mixkit-steam-rising-from-a-cup-of-coffee-4111-large.mp4"
-        type="video/mp4">
-    </video>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#140C08] via-transparent to-[#140C08]"></div>
-    <div class="absolute inset-0 bg-[#1C120C]/60 backdrop-blur-[1px]"></div>
+  <!-- VISIT TEASER (Creative & Cinematic) -->
+  <section class="relative py-48 lg:py-64 flex items-center justify-center overflow-hidden border-t border-white/5">
+    <!-- Dynamic Background Video & Elements -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay muted loop playsinline
+        class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40 scale-110">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-steam-rising-from-a-cup-of-coffee-4111-large.mp4"
+          type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#140C08] via-transparent to-[#140C08]"></div>
+      <div class="absolute inset-0 bg-[#1C120C]/60 backdrop-blur-[1px]"></div>
 
-    <!-- Pulsing Amber Glow -->
-    <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/20 rounded-full blur-[150px] animate-pulse pointer-events-none">
+      <!-- Pulsing Amber Glow -->
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/20 rounded-full blur-[150px] animate-pulse pointer-events-none">
+      </div>
+
+      <!-- Steam Particles -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute bottom-[-100px] left-[10%] w-32 h-32 bg-white/10 rounded-full blur-2xl animate-steam"
+          style="--duration: 12s; --delay: 0s;"></div>
+        <div class="absolute bottom-[-100px] left-[30%] w-48 h-48 bg-white/5 rounded-full blur-3xl animate-steam"
+          style="--duration: 15s; --delay: 2s;"></div>
+        <div class="absolute bottom-[-100px] left-[50%] w-40 h-40 bg-white/10 rounded-full blur-2xl animate-steam"
+          style="--duration: 10s; --delay: 4s;"></div>
+        <div class="absolute bottom-[-100px] left-[70%] w-56 h-56 bg-white/5 rounded-full blur-3xl animate-steam"
+          style="--duration: 18s; --delay: 1s;"></div>
+        <div class="absolute bottom-[-100px] left-[85%] w-36 h-36 bg-white/10 rounded-full blur-2xl animate-steam"
+          style="--duration: 14s; --delay: 3s;"></div>
+      </div>
     </div>
 
-    <!-- Steam Particles -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute bottom-[-100px] left-[10%] w-32 h-32 bg-white/10 rounded-full blur-2xl animate-steam"
-        style="--duration: 12s; --delay: 0s;"></div>
-      <div class="absolute bottom-[-100px] left-[30%] w-48 h-48 bg-white/5 rounded-full blur-3xl animate-steam"
-        style="--duration: 15s; --delay: 2s;"></div>
-      <div class="absolute bottom-[-100px] left-[50%] w-40 h-40 bg-white/10 rounded-full blur-2xl animate-steam"
-        style="--duration: 10s; --delay: 4s;"></div>
-      <div class="absolute bottom-[-100px] left-[70%] w-56 h-56 bg-white/5 rounded-full blur-3xl animate-steam"
-        style="--duration: 18s; --delay: 1s;"></div>
-      <div class="absolute bottom-[-100px] left-[85%] w-36 h-36 bg-white/10 rounded-full blur-2xl animate-steam"
-        style="--duration: 14s; --delay: 3s;"></div>
+    <div class="relative z-10 text-center max-w-5xl mx-auto px-6">
+      <div
+        class="inline-flex items-center gap-3 px-6 py-2 border border-amber-500/30 rounded-full bg-amber-500/5 mb-10 animate-fade-in">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+        <span class="text-[10px] font-bold uppercase tracking-[0.4em] text-amber-500">Visit Us Today</span>
+      </div>
+
+      <h2 class="text-6xl lg:text-[9rem] font-black tracking-tighter text-white mb-12 leading-[1.1] py-4">
+        Ready for your <br>
+        <span
+          class="font-['Playfair_Display'] italic font-medium text-[#D89324] tracking-tight drop-shadow-2xl px-2">perfect
+          cup?</span>
+      </h2>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-8 mt-16">
+        <a routerLink="/visit"
+          class="group relative inline-flex items-center justify-center px-12 py-5 bg-[#D89324] text-white font-black rounded-full overflow-hidden transition-all duration-500 hover:bg-amber-400 hover:shadow-[0_0_40px_rgba(216,147,36,0.5)] active:scale-95 uppercase tracking-[0.2em] text-[11px] w-full sm:w-auto">
+          <span class="relative z-10">Get Directions</span>
+          <div
+            class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+          </div>
+        </a>
+
+        <a href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd" target="_blank"
+          class="group relative inline-flex items-center justify-center px-12 py-5 bg-transparent border border-white/30 text-white font-black rounded-full overflow-hidden transition-all duration-500 hover:border-white hover:bg-white hover:text-zinc-950 active:scale-95 uppercase tracking-[0.2em] text-[11px] w-full sm:w-auto">
+          <span class="relative z-10">Order Ahead</span>
+          <div
+            class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-
-  <div class="relative z-10 text-center max-w-5xl mx-auto px-6">
-    <div
-      class="inline-flex items-center gap-3 px-6 py-2 border border-amber-500/30 rounded-full bg-amber-500/5 mb-10 animate-fade-in">
-      <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-      <span class="text-[10px] font-bold uppercase tracking-[0.4em] text-amber-500">Visit Us Today</span>
-    </div>
-
-    <h2 class="text-6xl lg:text-[9rem] font-black tracking-tighter text-white mb-12 leading-[1.1] py-4">
-      Ready for your <br>
-      <span
-        class="font-['Playfair_Display'] italic font-medium text-[#D89324] tracking-tight drop-shadow-2xl px-2">perfect
-        cup?</span>
-    </h2>
-
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-8 mt-16">
-      <a routerLink="/visit"
-        class="group relative inline-flex items-center justify-center px-12 py-5 bg-[#D89324] text-white font-black rounded-full overflow-hidden transition-all duration-500 hover:bg-amber-400 hover:shadow-[0_0_40px_rgba(216,147,36,0.5)] active:scale-95 uppercase tracking-[0.2em] text-[11px] w-full sm:w-auto">
-        <span class="relative z-10">Get Directions</span>
-        <div
-          class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-        </div>
-      </a>
-
-      <a href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd" target="_blank"
-        class="group relative inline-flex items-center justify-center px-12 py-5 bg-transparent border border-white/30 text-white font-black rounded-full overflow-hidden transition-all duration-500 hover:border-white hover:bg-white hover:text-zinc-950 active:scale-95 uppercase tracking-[0.2em] text-[11px] w-full sm:w-auto">
-        <span class="relative z-10">Order Ahead</span>
-        <div
-          class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-        </div>
-      </a>
-    </div>
-  </div>
   </section>
 
 </main>
